@@ -13,5 +13,8 @@ edit = img.filter(ImageFilter.SHARPEN).convert('L').rotate(-90)
 
 #contrast
 factor = 1.5
-enhane
+enhancer = ImageEnhance.Contrast(edit)
+edit = enhancer.enhance(factor)
+
+# ADD MORE EDITS FROM DOCUMENTATIONS https://pillow.readthedocs.io/en/stable
 
