@@ -18,3 +18,8 @@ edit = enhancer.enhance(factor)
 
 # ADD MORE EDITS FROM DOCUMENTATIONS https://pillow.readthedocs.io/en/stable
 
+clean_name = os.path.splitext(filename)[0]
+
+edit.save(f'.{pathOut}/{clean_name}_edited.jpg')
+
+
